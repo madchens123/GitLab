@@ -66,12 +66,12 @@ Mappings:
       HVM64: ami-7172b611
       HVMG2: ami-002bf460
  Resources:
-  EC2Instance:
+  EC2Instance: Postgresql1
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: !Ref 'InstanceType'
       SecurityGroups: [!Ref 'InstanceSecurityGroup']
-      KeyName: !Ref 'KeyName'
+      KeyName: !Ref 'ryland_lab'
       ImageId: !FindInMap [AWSRegionArch2AMI, !Ref 'AWS::Region', !FindInMap [AWSInstanceType2Arch,
           !Ref 'InstanceType', Arch]]
   InstanceSecurityGroup:

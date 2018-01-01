@@ -181,7 +181,7 @@ Parameters:
     Default: '205'
   Ec2KeyPair:
     Description: Select Keypair to Assign to EC2 Instances
-    Type: AWS::EC2::KeyPair::ryland_lab
+    Type: AWS::EC2::KeyPair::KeyName::ryland_lab
   BastionInstanceType:
     Description: Select Instance Type.
     Type: String
